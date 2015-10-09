@@ -13,5 +13,10 @@ namespace CST465
         {
 
         }
+
+        protected void uxSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

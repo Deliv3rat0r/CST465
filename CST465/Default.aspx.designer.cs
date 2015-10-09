@@ -94,6 +94,24 @@ namespace CST465 {
         protected global::System.Web.UI.WebControls.TextBox uxBiography;
         
         /// <summary>
+        /// lblCourseTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCourseTable;
+        
+        /// <summary>
+        /// uxCourseTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table uxCourseTable;
+        
+        /// <summary>
         /// lblCoursePrefix control.
         /// </summary>
         /// <remarks>
@@ -155,5 +173,32 @@ namespace CST465 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button uxSubmit;
+        
+        /// <summary>
+        /// uxIsPostBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal uxIsPostBack;
+        
+        /// <summary>
+        /// uxFormOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal uxFormOutput;
+        
+        /// <summary>
+        /// uxEventOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal uxEventOutput;
     }
 }

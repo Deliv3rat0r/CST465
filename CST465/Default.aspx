@@ -12,7 +12,7 @@
         <asp:Label AssociatedControlID="uxName" runat="server" />
         <asp:Textbox ID="uxName" runat="server" />
 
-        <asp:DropDownList ID="uxUserType" runat="server">
+        <asp:DropDownList ID="uxUserType" AutoPostBack="true" runat="server">
             <asp:ListItem Value="Student" Text="Student" />
             <asp:ListItem Value="Faculty/Staff" Text="Faculty/Staff" />
         </asp:DropDownList>
@@ -26,7 +26,8 @@
         <asp:Label AssociatedControlID="uxBiography" ID="lblBiography" runat="server" />
         <asp:TextBox TextMode="MultiLine" ID="uxBiography" runat="server" />
 
-        <asp:Table runat="server">
+        <asp:Label ID="lblCourseTable" AssociatedControlID="uxCourseTable" runat="server" />
+        <asp:Table ID="uxCourseTable" runat="server">
             <asp:TableHeaderRow runat="server">
                 <asp:TableHeaderCell>
                     <asp:Label ID="lblCoursePrefix" AssociatedControlID="uxCoursePrefix" Text="Course Prefix" runat="server" />
@@ -51,7 +52,11 @@
             </asp:TableRow>
         </asp:Table>
 
-        <asp:Button Text="Save Profile" ID="uxSubmit" runat="server" />
+        <asp:Button Text="Save Profile" ID="uxSubmit" OnClick="uxSubmit_Click" runat="server" />
+
+        <asp:Literal ID="uxIsPostBack" runat="server" />
+        <asp:Literal ID="uxFormOutput" runat="server" />
+        <asp:Literal ID="uxEventOutput" runat="server" />
 
     </div>
     </form>
