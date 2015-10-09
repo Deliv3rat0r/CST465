@@ -31,6 +31,15 @@ namespace CST465 {
         protected global::System.Web.UI.WebControls.TextBox uxName;
         
         /// <summary>
+        /// lblUserType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUserType;
+        
+        /// <summary>
         /// uxUserType control.
         /// </summary>
         /// <remarks>

@@ -12,6 +12,7 @@
         <asp:Label AssociatedControlID="uxName" runat="server" />
         <asp:Textbox ID="uxName" runat="server" />
 
+        <asp:Label ID="lblUserType" AssociatedControlID="uxUserType" runat="server" />
         <asp:DropDownList ID="uxUserType" AutoPostBack="true" runat="server">
             <asp:ListItem Value="Student" Text="Student" />
             <asp:ListItem Value="Faculty/Staff" Text="Faculty/Staff" />
