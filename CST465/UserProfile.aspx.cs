@@ -12,7 +12,8 @@ namespace CST465
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //error page checking
+            //throw new Exception("Bad stuff happened");
         }
 
         protected void uxSaveBtn_Click(object sender, EventArgs e)
