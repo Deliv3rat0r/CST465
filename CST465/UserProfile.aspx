@@ -81,20 +81,32 @@
                 <asp:View ID="View2" runat="server">
                     <h1>View Profile</h1>
 
-                    <asp:Label ID="lblFnameV2" AssociatedControlID="LitFName" runat="server"><strong>First Name: </strong></asp:Label>
+                    <asp:Label ID="lblFnameV2"  runat="server"><strong>First Name: </strong></asp:Label>
                     <asp:Literal ID="LitFName" runat="server" />
 
-                    <asp:Label ID="lblLNameV2" AssociatedControlID="LitLName" runat="server"><strong>Last Name: </strong></asp:Label>
+                    <asp:Label ID="lblLNameV2"  runat="server"><strong>Last Name: </strong></asp:Label>
                     <asp:Literal ID="LitLName" runat="server" />
 
-                    <asp:Label ID="lblAgeV2" AssociatedControlID="LitAge" runat="server"><strong>Age: </strong></asp:Label>
+                    <asp:Label ID="lblAgeV2"  runat="server"><strong>Age: </strong></asp:Label>
                     <asp:Literal ID="LitAge" runat="server" />
 
-                    <asp:Label ID="lblPhoneV2" AssociatedControlID="LitPhone" runat="server"><strong>Phone Number: </strong></asp:Label>
+                    <asp:Label ID="lblPhoneV2"  runat="server"><strong>Phone Number: </strong></asp:Label>
                     <asp:Literal ID="LitPhone" runat="server" />
 
-                    <asp:Label ID="lblEmailV2" AssociatedControlID="LitEmail" runat="server"><strong>Email: </strong></asp:Label>
+                    <asp:Label ID="lblEmailV2"  runat="server"><strong>Email: </strong></asp:Label>
                     <asp:Literal ID="LitEmail" runat="server" />
+
+                    <asp:Label ID="lblStreetV2"  runat="server"><strong>Street: </strong></asp:Label>
+                    <asp:Literal ID="LitStreet" runat="server" />
+
+                    <asp:Label ID="lblCityV2"  runat="server"><strong>City: </strong></asp:Label>
+                    <asp:Literal ID="LitCity" runat="server" />
+
+                    <asp:Label ID="lblStateV2" runat="server"><strong>State: </strong></asp:Label>
+                    <asp:Literal ID="LitState" runat="server" />
+
+                    <asp:Label ID="lblZipV2"  runat="server"><strong>Zip: </strong></asp:Label>
+                    <asp:Literal ID="LitZip" runat="server" />
 
                     <asp:Label ID="lblImg" AssociatedControlID="uxImage" runat="server" />
                     <asp:Image ID="uxImage" runat="server" />

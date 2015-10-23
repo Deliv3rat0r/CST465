@@ -12,7 +12,7 @@ namespace CST465
         protected void Page_Load(object sender, EventArgs e)
         {
             litOutput.Text = Request.QueryString.ToString();
-            //litOutput.Text = e.ToString();
+            Response.StatusCode = 500;
         }
     }
 }

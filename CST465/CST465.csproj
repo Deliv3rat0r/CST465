@@ -97,7 +97,7 @@
     <Compile Include="500Error.aspx.designer.cs">
       <DependentUpon>500Error.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_code\UserProfile.cs" />
+    <Compile Include="code\UserProfile.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
