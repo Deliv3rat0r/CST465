@@ -28,6 +28,7 @@ namespace CST465
                 LitPhone.Text = upbo.phone;
                 LitStreet.Text = upbo.street;
                 LitCity.Text = upbo.city;
+                LitState.Text = upbo.state;
                 LitZip.Text = upbo.zip;
 
                 if (upbo.profpic != null)

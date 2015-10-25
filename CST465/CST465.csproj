@@ -68,7 +68,9 @@
   <ItemGroup>
     <Content Include="404Error.aspx" />
     <Content Include="500Error.aspx" />
+    <Content Include="css\DefaultStyles.css" />
     <Content Include="packages.config" />
+    <Content Include="App_Master\BaseTemplate.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -80,7 +82,9 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="UserProfile.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="404Error.aspx.cs">
@@ -96,6 +100,13 @@
     </Compile>
     <Compile Include="500Error.aspx.designer.cs">
       <DependentUpon>500Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Master\BaseTemplate.Master.cs">
+      <DependentUpon>BaseTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Master\BaseTemplate.Master.designer.cs">
+      <DependentUpon>BaseTemplate.Master</DependentUpon>
     </Compile>
     <Compile Include="code\UserProfile.cs" />
     <Compile Include="Default.aspx.cs">
@@ -119,6 +130,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
