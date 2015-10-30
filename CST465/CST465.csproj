@@ -83,6 +83,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="UserProfile.aspx" />
+    <Content Include="ViewTreaters.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTreaters.aspx.cs">
+      <DependentUpon>ViewTreaters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTreaters.aspx.designer.cs">
+      <DependentUpon>ViewTreaters.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
