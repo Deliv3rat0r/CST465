@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="404Error.aspx" />
     <Content Include="500Error.aspx" />
+    <Content Include="AddTreater.aspx" />
     <Content Include="css\DefaultStyles.css" />
     <Content Include="packages.config" />
     <Content Include="App_Master\BaseTemplate.Master" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="500Error.aspx.designer.cs">
       <DependentUpon>500Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTreater.aspx.cs">
+      <DependentUpon>AddTreater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTreater.aspx.designer.cs">
+      <DependentUpon>AddTreater.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Master\BaseTemplate.Master.cs">
       <DependentUpon>BaseTemplate.Master</DependentUpon>
