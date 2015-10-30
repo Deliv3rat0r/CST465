@@ -15,6 +15,14 @@
             }
         }
     </script>
+    <style type="text/css">
+        label{
+            width:150px;
+            display:inline-block;
+            padding:5px;
+        }
+        
+    </style>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="header" ID="header" runat="server">
     <h1>User Profile</h1>
