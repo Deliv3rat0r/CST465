@@ -9,6 +9,7 @@ nav{
 main{
     background-color:#333;
     color:lightgrey;
+    padding:5px;
 }
 footer{
     background-color:#00432D;
@@ -16,5 +17,20 @@ footer{
 }
 body {
     background-color:#202020;
+}
+#centerBodyDiv{
+    margin:auto;
+    width:1004px;
+    background-color:#202020;
+}
+.lblBlock{
+    width:150px;
+    display:inline-block;
+    padding:5px;
+}
+.lblBlockViewPage{
+    width:100px;
+    display:inline-block;
+    padding:4px;
 }
 
