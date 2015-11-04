@@ -4,10 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
     <link type="text/css" rel="stylesheet" href="../css/DefaultStyles.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
-
+        <title></title>
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -30,7 +29,7 @@
             </main>
             <footer>
                 <asp:ContentPlaceHolder ID="footer" runat="server">
-
+                    <p>&copy Jonathan Summerlin 2015</p>
                 </asp:ContentPlaceHolder>
             </footer>
         </div>

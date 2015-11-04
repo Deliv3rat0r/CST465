@@ -1,33 +1,50 @@
-﻿header{
+﻿
+/*Master page styles*/
+header{
     background-color:#0A8F64;
     color:#87C8B3;
+    border-radius:25px;
+    padding-left:20px;
 }
+
 nav{
     background-color:#00432D;
     color:#87C8B3;
+    padding:3px;
+    margin-bottom:5px;
 }
+
 main{
     background-color:#333;
     color:lightgrey;
     padding:5px;
 }
+
 footer{
     background-color:#00432D;
     color:#87C8B3;
+    padding:3px;
+    margin-top:5px;
+    text-align:center;
 }
+
 body {
     background-color:#202020;
 }
+
+/*Control Page styles*/
 #centerBodyDiv{
     margin:auto;
     width:1004px;
     background-color:#202020;
 }
+
 .lblBlock{
     width:150px;
     display:inline-block;
     padding:5px;
 }
+
 .lblBlockViewPage{
     width:100px;
     display:inline-block;

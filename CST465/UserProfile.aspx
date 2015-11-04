@@ -3,6 +3,7 @@
 
 
 <asp:Content ContentPlaceHolderID="head" ID="head" runat="server">
+    <title>User Profile</title>
     <script type="text/javascript">
         function validateFile(sender, args) {
             var allowedExtensions = ['jpg', 'gif', 'png'];
@@ -155,8 +156,6 @@
         </asp:View>
     </asp:MultiView>
 </asp:Content>
-<asp:Content ContentPlaceHolderID="footer" ID="footer" runat="server">
-    <p>This is where a footer would go</p>
-</asp:Content>
+
 
 
