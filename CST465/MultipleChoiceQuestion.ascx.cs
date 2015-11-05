@@ -20,6 +20,7 @@ namespace CST465
             get { return uxRadListAnswers.SelectedItem.Value; }
             set { uxRadListAnswers.SelectedItem.Value = value; }
         }
+
         public List<ListItem> Items;
 
         protected void Page_Init(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace CST465
             {
                 foreach (ListItem item in Items)
                 {
-                    //unsure what to do here
+                    uxRadListAnswers.Items.Add(item);
                 }
             }
         }
