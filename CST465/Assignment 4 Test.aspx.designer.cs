@@ -38,5 +38,41 @@ namespace CST465 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CST465.MultipleChoiceQuestion uxMultiChoiceQuestion;
+        
+        /// <summary>
+        /// uxTrueFalseQuestion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CST465.TrueFalseQuestion uxTrueFalseQuestion;
+        
+        /// <summary>
+        /// uxShortAnswerQuestion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CST465.ShortTextQuestion uxShortAnswerQuestion;
+        
+        /// <summary>
+        /// uxBtnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button uxBtnSubmit;
+        
+        /// <summary>
+        /// litOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litOutput;
     }
 }

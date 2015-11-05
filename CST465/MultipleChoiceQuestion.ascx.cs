@@ -9,6 +9,7 @@ namespace CST465
 {
     public partial class MultipleChoiceQuestion : System.Web.UI.UserControl, ITestQuestion
     {
+        //Setup Interface strings
         public string QuestionText
         {
             get { return lblRadListAnswers.Text; }
@@ -21,10 +22,12 @@ namespace CST465
             set { uxRadListAnswers.SelectedItem.Value = value; }
         }
 
-        public List<ListItem> Items;
+        //set a list of list items to iterate through to form our possible answers
+        public List<ListItem> Items { get; set; }
 
         protected void Page_Init(object sender, EventArgs e)
         {
+            //If items is not null, add answers to the radial button list
             if(Items != null)
             {
                 foreach (ListItem item in Items)

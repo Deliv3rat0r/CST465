@@ -12,8 +12,19 @@ namespace CST465
 {
     [DefaultProperty("Text")]
     [ToolboxData("<{0}:ShortTextQuestion runat=server></{0}:ShortTextQuestion>")]
-    public class ShortTextQuestion : CompositeControl //WebControl, CompositeControl
+    public class ShortTextQuestion : CompositeControl, ITestQuestion //WebControl
     {
+        //Setup interface strings
+        public string QuestionText { get; set; }
+        public string Answer { get { return uxChildBox.Text; } set { uxChildBox.Text = value; } }
+
+        //Setup objects to be added to controls
+        Label lblChildBox;
+        TextBox uxChildBox;
+        RequiredFieldValidator reqChildBox;
+
+
+        //Here by default
         [Bindable(true)]
         [Category("Appearance")]
         [DefaultValue("")]
@@ -32,18 +43,20 @@ namespace CST465
             }
         }
 
+        //Override child controls to add to our created controls
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
 
-            Label lblChildBox = new Label();
+            lblChildBox = new Label();
             lblChildBox.AssociatedControlID = "uxChildBox";
             lblChildBox.ID = "lblChildBox";
+            lblChildBox.Text = QuestionText;
 
-            TextBox uxChildBox = new TextBox();
+            uxChildBox = new TextBox();
             uxChildBox.ID = "uxChildBox";
 
-            RequiredFieldValidator reqChildBox = new RequiredFieldValidator();
+            reqChildBox = new RequiredFieldValidator();
             reqChildBox.ID = "reqChildBox";
             reqChildBox.ControlToValidate = "uxChildBox";
             reqChildBox.ErrorMessage = "Textbox left blank";
@@ -56,9 +69,10 @@ namespace CST465
                         
         }
 
-        protected override void RenderContents(HtmlTextWriter output)
-        {
-            output.Write(Text);
-        }
+        //Here by default
+        //protected override void RenderContents(HtmlTextWriter output)
+        //{
+        //    output.Write(Text);
+        //}
     }
 }

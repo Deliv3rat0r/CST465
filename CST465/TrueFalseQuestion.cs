@@ -12,8 +12,18 @@ namespace CST465
 {
     [DefaultProperty("Text")]
     [ToolboxData("<{0}:TrueFalseQuestion runat=server></{0}:TrueFalseQuestion>")]
-    public class TrueFalseQuestion : CompositeControl //WebControl
+    public class TrueFalseQuestion : CompositeControl, ITestQuestion //WebControl
     {
+        //setup interface strings
+        public string QuestionText { get; set; }
+        public string Answer { get { return uxTFQuestion.SelectedItem.Value; } set { uxTFQuestion.SelectedItem.Value = value; } }
+
+        //Setup the objects to be added to controls
+        protected Label lblTFQuestion;
+        protected RadioButtonList uxTFQuestion;
+        protected RequiredFieldValidator reqTFQuestion;
+
+        //Here by default
         [Bindable(true)]
         [Category("Appearance")]
         [DefaultValue("")]
@@ -31,22 +41,24 @@ namespace CST465
                 ViewState["Text"] = value;
             }
         }
-
+       
+        //Override the Create Child Controls event
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
 
             //label for radio button list
-            Label lblTFQuestion = new Label();
+            lblTFQuestion = new Label();
             lblTFQuestion.ID = "lblTFQuestion";
             lblTFQuestion.AssociatedControlID = "uxTFQuestion";
+            lblTFQuestion.Text = QuestionText;
 
             //create radio button list
-            RadioButtonList uxTFQuestion = new RadioButtonList();
+            uxTFQuestion = new RadioButtonList();
             uxTFQuestion.ID = "uxTFQuestion";
 
             //create validation for radio button list
-            RequiredFieldValidator reqTFQuestion = new RequiredFieldValidator();
+            reqTFQuestion = new RequiredFieldValidator();
             reqTFQuestion.ID = "reqTFQuestion";
             reqTFQuestion.Display = ValidatorDisplay.Dynamic;
             reqTFQuestion.Text = "*";
@@ -65,9 +77,9 @@ namespace CST465
             Controls.Add(reqTFQuestion);
         }
 
-        protected override void RenderContents(HtmlTextWriter output)
-        {
-            output.Write(Text);
-        }
+        //protected override void RenderContents(HtmlTextWriter output)
+        //{
+        //    output.Write(Text);
+        //}
     }
 }
