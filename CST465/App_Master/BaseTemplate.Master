@@ -14,9 +14,12 @@
         <div id="centerBodyDiv">
             <header>
                 <asp:ContentPlaceHolder ID="header" runat="server">
-
+                    
                 </asp:ContentPlaceHolder>
             </header>
+            <div id="LoginStatus">
+                <asp:LoginStatus ID="uxLoginStatus" CssClass="uxLoginStatus" runat="server" />
+            </div>
             <nav>
                 <asp:ContentPlaceHolder ID="nav" runat="server">
 

@@ -15,6 +15,9 @@ namespace CST465
             //error page checking
             //throw new Exception("Bad stuff happened");
 
+            //Test Trace write for testing purposes
+            Trace.Write("Your message to be written to the trace log");
+
             if(Session["ProfileData"] != null)
             {
                 uxMultiView.ActiveViewIndex = 1;

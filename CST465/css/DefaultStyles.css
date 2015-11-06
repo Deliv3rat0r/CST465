@@ -32,11 +32,18 @@ body {
     background-color:#202020;
 }
 
+#LoginStatus{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
 /*Control Page styles*/
 #centerBodyDiv{
     margin:auto;
     width:1004px;
     background-color:#202020;
+    position:relative;
 }
 
 .lblBlock{
