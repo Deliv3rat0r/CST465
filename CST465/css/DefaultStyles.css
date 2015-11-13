@@ -58,3 +58,39 @@ body {
     padding:4px;
 }
 
+.uxSitePath{
+    color:#87C8B3;
+}
+
+.uxSitePath a:link{
+    text-decoration: none;
+    color:#87C8B3;
+}
+
+.uxSitePath a:visited{
+    text-decoration: none;
+    color:#87C8B3;
+}
+
+.uxSiteMapMenu{
+    margin:auto;
+    width:100%;
+}
+
+.uxSiteMapMenu a{
+    display:inline-block;
+    color:#0A8F64;
+    text-decoration:none;
+    padding:10px;
+    background-color: #00432D;
+    border:solid 1px #0A8F64;
+}
+
+.uxSiteMapMenu a:hover{
+    display:inline-block;
+    color:#00432D;
+    text-decoration:none;
+    padding:10px;
+    background-color: #0A8F64;
+    border:solid 1px #0A8F64;
+}
