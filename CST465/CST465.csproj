@@ -76,6 +76,7 @@
     <Content Include="Customers\Login.aspx" />
     <Content Include="Customers\Register.aspx" />
     <Content Include="EssayQuestion.ascx" />
+    <Content Include="MidtermExam.aspx" />
     <Content Include="MultipleChoiceQuestion.ascx" />
     <Content Include="packages.config" />
     <Content Include="App_Master\BaseTemplate.Master" />
@@ -90,6 +91,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Customers\UserProfile.aspx" />
+    <Content Include="Results.aspx" />
     <Content Include="ViewTreaters.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -178,6 +180,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="ITestQuestion.cs" />
+    <Compile Include="MidtermExam.aspx.cs">
+      <DependentUpon>MidtermExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MidtermExam.aspx.designer.cs">
+      <DependentUpon>MidtermExam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MultipleChoiceQuestion.ascx.cs">
       <DependentUpon>MultipleChoiceQuestion.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -186,6 +195,13 @@
       <DependentUpon>MultipleChoiceQuestion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ShortTextQuestion.cs" />
     <Compile Include="TrueFalseQuestion.cs" />
     <Compile Include="Customers\UserProfile.aspx.cs">

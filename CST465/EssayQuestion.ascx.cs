@@ -18,7 +18,7 @@ namespace CST465
         public string Answer
         {
             get { return uxQuestionBox.Text; }
-            set { value = uxQuestionBox.Text; }
+            set { uxQuestionBox.Text = value; }
         }
 
         protected void Page_Load(object sender, EventArgs e)
