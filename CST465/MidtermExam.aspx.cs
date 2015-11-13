@@ -27,7 +27,7 @@ namespace CST465
             uxTFQ7.QuestionText = "All controls in ASP.NET support DataBinding";
             uxTFQ8.QuestionText = "Browsers must support ASP.NET in order to display pages created with it";
             uxTFQ9.QuestionText = "When a MasterPage is used, a page wraps its own content with the MasterPages’s content";
-            uxTFQ10.QuestionText = "<deny> authorization rules in the web.config are processed first regardless of the way the rules are ordered";
+            uxTFQ10.QuestionText = "&ltdeny&gt authorization rules in the web.config are processed first regardless of the way the rules are ordered";
 
             //Short answer questions
             uxShortQ1.QuestionText = "The line of text that tells a SqlDataSource how to connect to the database is called a ";
