@@ -11,7 +11,16 @@ namespace CST465
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["QuestionAnswers"] != null)
+            {
+                List<QuestionAnswer> questionList = (List<QuestionAnswer>)Session["QuestionAnswers"];
+                uxRepeatQA.DataSource = questionList;
+                uxRepeatQA.DataBind();
+            }
+            else
+            {
 
+            }
         }
     }
 }

@@ -9,12 +9,6 @@ namespace CST465
 {
     public partial class MidtermExam : System.Web.UI.Page
     {
-        public class QuestionAnswer
-        {
-            public string QuestionText { get; set; }
-            public string Answer { get; set; }
-        }
-
         protected void Page_Init(object sender, EventArgs e)
         {
             //True/False questions
@@ -46,8 +40,10 @@ namespace CST465
 
         protected void uxSubmitbtn_Click(object sender, EventArgs e)
         {
+            //create list for storing questions and answers
             List<QuestionAnswer> questionList = new List<QuestionAnswer>();
 
+            //populate list with all questions and answers on the page
             foreach (Control c in uxQuestions.Controls)
             {
                 if(c is ITestQuestion)
@@ -59,6 +55,12 @@ namespace CST465
                     questionList.Add(qa);
                 }
             }
+
+            //Save list to session
+            Session["QuestionAnswers"] = questionList;
+
+            //redirect to results page
+            Response.Redirect("Results.aspx");
         }
     }
 }
