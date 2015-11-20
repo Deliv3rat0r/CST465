@@ -161,6 +161,7 @@
       <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="code\UserProfile.cs" />
+    <Compile Include="code\UserProfileRepo.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

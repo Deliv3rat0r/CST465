@@ -17,5 +17,6 @@ namespace CST465
         public String state { get; set; }
         public String zip { get; set; }
         public byte[] profpic { get; set; }
+        public Guid UserID { get; set; }
     }
 }
