@@ -78,8 +78,8 @@
 
             <asp:Label ID="lblState" CssClass="lblBlock" AssociatedControlID="uxState" runat="server">State:</asp:Label>
             <asp:DropDownList ID="uxState" runat="server">
-                <asp:ListItem Value="Oregon" Text="Oregon" />
-                <asp:ListItem Value="Washington" Text="Washington" />
+                <asp:ListItem Value="OR" Text="Oregon" />
+                <asp:ListItem Value="WA" Text="Washington" />
             </asp:DropDownList>
 
             <br />
@@ -120,7 +120,7 @@
 
             <br />
 
-            <asp:Label ID="lblPhoneV2" CssClass="lblBlockViewPage" runat="server"><strong>Phone Number: </strong></asp:Label>
+            <asp:Label ID="lblPhoneV2" CssClass="lblBlockViewPage" runat="server"><strong>Phone #: </strong></asp:Label>
             <asp:Literal ID="LitPhone" runat="server" />
 
             <br />
@@ -152,6 +152,10 @@
 
             <asp:Label ID="lblImg" AssociatedControlID="uxImage" runat="server" />
             <asp:Image ID="uxImage" Width="200px" runat="server" />
+
+            <br /><br />
+
+            <asp:Button ID="uxEditProfile" Text="Edit Profile" OnClick="uxEditProfile_Click" runat="server" />
 
         </asp:View>
     </asp:MultiView>

@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
+using System.Web.Security;
+using CST465.code;
 
 namespace CST465
 {
@@ -18,13 +20,23 @@ namespace CST465
             //Test Trace write for testing purposes
             Trace.Write("Your message to be written to the trace log");
 
-            if(Session["ProfileData"] != null)
-            {
+            //if (Session["ProfileData"] != null)
+            //{
                 uxMultiView.ActiveViewIndex = 1;
 
-                UserProfileBO upbo = (UserProfileBO)Session["ProfileData"];
+                //get guid for user
+                MembershipUser usr = Membership.GetUser();
+                Guid uid = (Guid)usr.ProviderUserKey;
+
+
+
+
+            //UserProfileBO upbo = (UserProfileBO)Session["ProfileData"];
+            UserProfileBO upbo = UserProfileRepo.getProfile(uid);
+
+            Session["ProfileData"] = upbo;
                 
-                LitAge.Text = upbo.age;
+                LitAge.Text = upbo.age.ToString();
                 LitEmail.Text = upbo.email;
                 LitFName.Text = upbo.fname;
                 LitLName.Text = upbo.lname;
@@ -49,21 +61,26 @@ namespace CST465
                     }
                 }
 
-            }
-            else
-            {
-                uxMultiView.ActiveViewIndex = 0;
-                //uxPerson.Text = "There is no person";
-            }
-        }
+            //}
+            //    else
+            //    {
+            //        uxMultiView.ActiveViewIndex = 0;
+            //        //uxPerson.Text = "There is no person";
+            //    }
+}
 
         protected void uxSaveBtn_Click(object sender, EventArgs e)
         {
             if(Page.IsValid == true)
             {
+                //get guid for user
+                MembershipUser usr = Membership.GetUser();
+                Guid uid = (Guid)usr.ProviderUserKey;
+
+
                 //setting up session object
                 UserProfileBO upbo = new UserProfileBO();
-                upbo.age = uxAge.Text;
+                upbo.age = Int32.Parse(uxAge.Text);
                 upbo.city = uxCity.Text;
                 upbo.confemail = uxConfirmEmail.Text;
                 upbo.email = uxEmail.Text;
@@ -73,6 +90,7 @@ namespace CST465
                 upbo.state = uxState.Text;
                 upbo.street = uxStreet.Text;
                 upbo.zip = uxZip.Text;
+                upbo.UserID = uid;
 
                 //set active view to view 2
                 uxMultiView.ActiveViewIndex = 1;
@@ -104,7 +122,12 @@ namespace CST465
                     //}
                 }
 
+                //save in session
                 Session["ProfileData"] = upbo;
+
+                //save in databse
+                UserProfileRepo.saveProfile(upbo);
+
                 Response.Redirect("UserProfile.aspx");
             }
         }
@@ -123,6 +146,27 @@ namespace CST465
             }
 
             args.IsValid = image_valid;
+
+        }
+
+        protected void uxEditProfile_Click(object sender, EventArgs e)
+        {
+            uxMultiView.ActiveViewIndex = 0;
+
+            if (Session["ProfileData"] != null)
+            {
+                UserProfileBO upbo = (UserProfileBO)Session["ProfileData"];
+
+                uxFName.Text = upbo.fname;
+                uxAge.Text = upbo.age.ToString();
+                uxCity.Text = upbo.city;
+                uxConfirmEmail.Text = upbo.confemail;
+                uxEmail.Text = upbo.email;
+                uxLName.Text = upbo.lname;
+                uxPhone.Text = upbo.phone;
+                uxStreet.Text = upbo.street;
+                uxZip.Text = upbo.zip;
+            }
 
         }
     }

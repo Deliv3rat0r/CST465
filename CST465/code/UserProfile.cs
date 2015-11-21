@@ -8,7 +8,7 @@ namespace CST465
     {
         public String fname { get; set; }
         public String lname { get; set; }
-        public String age { get; set; }
+        public int age { get; set; }
         public String phone { get; set; }
         public String email { get; set; }
         public String confemail { get; set; }
