@@ -25,7 +25,7 @@
 
                 </asp:ContentPlaceHolder>
                 <asp:SiteMapDataSource ID="uxSiteMap" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server" />
-                <asp:Menu DataSourceID="uxSiteMap" CssClass="uxSiteMapMenu" Orientation="Horizontal" runat="server">
+                <asp:Menu DataSourceID="uxSiteMap" StaticMenuItemStyle-VerticalPadding="1px" StaticMenuItemStyle-HorizontalPadding="10px" StaticMenuStyle-CssClass="uxMenuStyle" CssClass="uxSiteMapMenu" Orientation="Horizontal" runat="server">
                 </asp:Menu>
                 <asp:SiteMapPath ID="uxSiteMapPath" PathSeparator=" > " CssClass="uxSitePath" runat="server"></asp:SiteMapPath>
             </nav>

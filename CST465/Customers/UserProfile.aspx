@@ -21,7 +21,7 @@
     <h1>User Profile</h1>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="nav" ID="nav" runat="server">
-    <p>Nav would go here</p>
+    <%--<p>Nav would go here</p>--%>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="main" ID="main" runat="server">
     <asp:MultiView ID="uxMultiView" ActiveViewIndex="0" runat="server">

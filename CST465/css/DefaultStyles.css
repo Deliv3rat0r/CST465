@@ -74,16 +74,17 @@ body {
 
 .uxSiteMapMenu{
     margin:auto;
-    width:100%;
+    /*width:100%;*/
+
 }
 
 .uxSiteMapMenu a{
     display:inline-block;
-    color:#0A8F64;
+    color:#87C8B3;
     text-decoration:none;
     padding:10px;
-    background-color: #00432D;
-    border:solid 1px #0A8F64;
+    background-color:#0A8F64;
+    border:solid 1px  #00432D;
 }
 
 .uxSiteMapMenu a:hover{
@@ -91,6 +92,10 @@ body {
     color:#00432D;
     text-decoration:none;
     padding:10px;
-    background-color: #0A8F64;
+    background-color: #87C8B3;
     border:solid 1px #0A8F64;
+}
+
+.uxMenuStyle a{
+    margin: 3px 2px;
 }
