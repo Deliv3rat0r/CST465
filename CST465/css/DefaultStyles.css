@@ -41,7 +41,9 @@ body {
 /*Control Page styles*/
 #centerBodyDiv{
     margin:auto;
-    width:1004px;
+    width:100%;
+    max-width:1004px;
+    min-width:320px;
     background-color:#202020;
     position:relative;
 }
@@ -98,4 +100,28 @@ body {
 
 .uxMenuStyle a{
     margin: 3px 2px;
+}
+
+.col{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px;
+}
+
+.contact{
+    background-color:#0A8F64;
+}
+
+@media screen and (min-width: 768px){
+    .col{
+        float:left;
+    }
+    .contact{
+    }
+    .col_25{
+        width:25%;
+    }
+    .col_75{
+        width:75%;
+    }
 }

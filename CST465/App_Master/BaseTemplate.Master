@@ -8,18 +8,28 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
         <title>Placeholder Title</title>
     </asp:ContentPlaceHolder>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="centerBodyDiv">
+
+            <asp:ScriptManager ID="uxScriptMgr" runat="server">
+
+            </asp:ScriptManager>
+            
             <header>
                 <asp:ContentPlaceHolder ID="header" runat="server">
 
                 </asp:ContentPlaceHolder>
             </header>
+            
             <div id="LoginStatus">
                 <asp:LoginStatus ID="uxLoginStatus" CssClass="uxLoginStatus" runat="server" />
             </div>
+            
             <nav>
                 <asp:ContentPlaceHolder ID="nav" runat="server">
 
@@ -29,16 +39,19 @@
                 </asp:Menu>
                 <asp:SiteMapPath ID="uxSiteMapPath" PathSeparator=" > " CssClass="uxSitePath" runat="server"></asp:SiteMapPath>
             </nav>
+            
             <main>
                 <asp:ContentPlaceHolder ID="main" runat="server">
         
                 </asp:ContentPlaceHolder>
             </main>
+            
             <footer>
                 <asp:ContentPlaceHolder ID="footer" runat="server">
                     <p>&copy Jonathan Summerlin 2015</p>
                 </asp:ContentPlaceHolder>
             </footer>
+        
         </div>
     </form>
 </body>
