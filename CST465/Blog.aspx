@@ -24,16 +24,19 @@
             <asp:UpdatePanel ID="uxBlogUpdate" runat="server">
                 <ContentTemplate>
 
-                    <asp:FormView ID="uxFormView" DataSourceID="uxBlogSql" DefaultMode="Insert" runat="server">
+                    <asp:FormView ID="uxFormView" DataSourceID="uxBlogSql" DefaultMode="Insert" Width="100%" runat="server">
                         <InsertItemTemplate>
                             <asp:Label ID="lblTitlebox" AssociatedControlID="uxBlogTitleBox" runat="server">Title: </asp:Label>
+                            <br />
                             <asp:TextBox ID="uxBlogTitleBox" Text='<%#Bind("Title") %>' runat="server" />
                             <br />
                             <br />
                             <asp:Label ID="lblBlogEntryBox" AssociatedControlID="uxBlogEntryBox" runat="server">Message: </asp:Label>
-                            <asp:TextBox ID="uxBlogEntryBox" Text='<%#Bind("Content") %>' TextMode="MultiLine" runat="server" />
+                            <br />
+                            <asp:TextBox ID="uxBlogEntryBox" Width="275px" Height="75px" Text='<%#Bind("Content") %>' TextMode="MultiLine" runat="server" />
                             <br />
                             <asp:Button ID="btnInsertBlog" Text="Submit" CommandName="Insert" runat="server" />
+                            <hr  />
                         </InsertItemTemplate>
                     </asp:FormView>
 
@@ -52,5 +55,4 @@
         </LoggedInTemplate>
     </asp:LoginView>
 </asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="footer" runat="server">
-</asp:Content>
+
