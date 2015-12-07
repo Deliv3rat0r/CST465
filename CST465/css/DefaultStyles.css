@@ -125,3 +125,40 @@ body {
         width:75%;
     }
 }
+
+
+/*MangeProducts page css*/
+
+.gridview_header{
+    background-color:#00432D;
+    color:#87C8B3;
+    font-weight:bolder;
+}
+
+.gridview_header a{
+    color:#87C8B3;
+}
+
+.gridview_header a:hover{
+    background-color:#00432D;
+    color:#0A8F64;
+}
+
+.datagrid{
+    background-color:#87C8B3;
+    color:#00432D;   
+}
+
+.datagrid a{
+    text-decoration:none;
+}
+
+.gridview_edit a{
+    color:#00432D;
+}
+
+.gridview_edit a:hover{
+    color:#0A8F64;
+    text-decoration:none;
+}
+

@@ -52,31 +52,32 @@
 
 
             <asp:GridView ID="uxGridView" AutoGenerateColumns="false" Width="100%" DataSourceID="uxProductSql"
-                DataKeyNames="ID" AllowSorting="true" AllowPaging="true" PageSize="10" runat="server">
+                DataKeyNames="ID" AllowSorting="true" AllowPaging="true" PageSize="10" CssClass="datagrid" HeaderStyle-CssClass="gridview_header" runat="server">
                 <Columns>
                     <%--<asp:BoundField DataField="ID" HeaderText="ID" />--%>
-                    <asp:BoundField DataField="Name" SortExpression="Name" HeaderText="Name" />
-                    <asp:BoundField DataField="Description" HeaderText="Description" />
+                    <asp:BoundField DataField="Name" SortExpression="Name" HeaderStyle-CssClass="gridview_header" HeaderText="Name" />
+                    <asp:BoundField DataField="Description" SortExpression="Description" HeaderText="Description" />
                     <asp:BoundField DataField="Price" SortExpression="Price" HeaderText="Price" />
                     <asp:BoundField DataField="Featured" SortExpression="Featured" HeaderText="Featured" />
 
-                    <asp:TemplateField>
+                    <%--<asp:TemplateField>
                         <ItemTemplate>
-                            <%--<span style="font-weight:bold; color: green;">
-                        <%#Eval("ID") %>
-                        <%#Eval("Name") %>
-                        <%#Eval("Description") %>
-                        <%#Eval("Price") %>
-                        <%#Eval("Featured") %>
-                    </span>--%>
+                            <span style="font-weight: bold; color: green;">
+                                <%#Eval("ID") %>
+                                <%#Eval("Name") %>
+                                <%#Eval("Description") %>
+                                <%#Eval("Price") %>
+                                <%#Eval("Featured") %>
+                            </span>
                         </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:CommandField ShowEditButton="true" />
+                    </asp:TemplateField>--%>
+
+                    <asp:CommandField ItemStyle-CssClass="gridview_edit" ShowEditButton="true" />
 
                 </Columns>
             </asp:GridView>
+
         </ContentTemplate>
     </asp:UpdatePanel>
-</asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="footer" runat="server">
+
 </asp:Content>
