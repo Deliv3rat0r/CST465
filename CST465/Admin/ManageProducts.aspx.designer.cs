@@ -22,6 +22,15 @@ namespace CST465.Admin {
         protected global::System.Web.UI.WebControls.SqlDataSource uxProductSql;
         
         /// <summary>
+        /// uxProductUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel uxProductUpdate;
+        
+        /// <summary>
         /// uxFormView control.
         /// </summary>
         /// <remarks>
