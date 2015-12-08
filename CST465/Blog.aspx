@@ -42,7 +42,7 @@
 
                     <asp:Repeater ID="uxBlogRepeater" DataSourceID="uxBlogSql" runat="server">
                         <ItemTemplate>
-                            <article>
+                            <article class="blogpost">
                                 <h1><%# Eval("Title") %></h1>
                                 <p><%# Eval("Content") %></p>
                             </article>

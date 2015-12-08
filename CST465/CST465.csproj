@@ -79,7 +79,10 @@
     <Content Include="css\DefaultStyles.css" />
     <Content Include="Customers\Login.aspx" />
     <Content Include="Customers\Register.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="EssayQuestion.ascx" />
+    <Content Include="FeaturedProducts.ascx" />
+    <Content Include="img\d7816108868e917606e3c77443b36f0b.jpg" />
     <Content Include="MidtermExam.aspx" />
     <Content Include="MultipleChoiceQuestion.ascx" />
     <Content Include="packages.config" />
@@ -93,7 +96,7 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="Default_old.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Customers\UserProfile.aspx" />
     <Content Include="Products.aspx" />
@@ -198,12 +201,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default_old.aspx.cs">
+      <DependentUpon>Default_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_old.aspx.designer.cs">
+      <DependentUpon>Default_old.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EssayQuestion.ascx.cs">
       <DependentUpon>EssayQuestion.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EssayQuestion.ascx.designer.cs">
       <DependentUpon>EssayQuestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FeaturedProducts.ascx.cs">
+      <DependentUpon>FeaturedProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeaturedProducts.ascx.designer.cs">
+      <DependentUpon>FeaturedProducts.ascx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -265,7 +282,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\" />
     <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>

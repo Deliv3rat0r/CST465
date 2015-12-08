@@ -10,9 +10,10 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="main" runat="server">
     <section class="col col_75">
         <h2>About Us</h2>
+        <img src="img/d7816108868e917606e3c77443b36f0b.jpg" alt="Photo of Robert Wolfgang O'McVanPfannkuchen (Company founder)" title="Robert Wolfgang O'McVanPfannkuchen" class="bobabout" />
         <p>
-            At our company we're really big fans of placeholder text. This very section is an example of how much we love placeholder text,
-             because this section is, in fact, placeholder text.
+            This company is the result of the dream that our founder, Robert Wolfgang O'McVanPfannkuchen, had to sell 
+            discount computer parts. 40 years later, here we are.
         </p>
     </section>
 

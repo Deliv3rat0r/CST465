@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CST465
 {
-    public partial class Default1 : System.Web.UI.Page
+    public partial class FeaturedProducts : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

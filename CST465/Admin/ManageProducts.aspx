@@ -9,11 +9,11 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="nav" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="main" runat="server">
-    <%--SelectCommandType="StoredProcedure"
-        SelectCommand="Product_GetList"--%>
+    
     <asp:SqlDataSource ID="uxProductSql"
         ConnectionString="<%$ConnectionStrings:DB_CST465 %>"
-        SelectCommandType="Text" SelectCommand="SELECT * FROM Product"
+        SelectCommandType="StoredProcedure"
+        SelectCommand="Product_GetList"
         InsertCommandType="StoredProcedure"
         InsertCommand="Product_InsertUpdate"
         UpdateCommandType="StoredProcedure"

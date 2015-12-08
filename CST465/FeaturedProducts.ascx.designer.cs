@@ -10,25 +10,16 @@
 namespace CST465 {
     
     
-    public partial class Products {
+    public partial class FeaturedProducts {
         
         /// <summary>
-        /// uxAllProductsSql control.
+        /// uxFeaturedSql control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource uxAllProductsSql;
-        
-        /// <summary>
-        /// uxFeaturedUserControl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::CST465.FeaturedProducts uxFeaturedUserControl;
+        protected global::System.Web.UI.WebControls.SqlDataSource uxFeaturedSql;
         
         /// <summary>
         /// uxFeaturedRepeater control.
